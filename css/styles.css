@@ -51,7 +51,7 @@ body {
     list-style: none;
 }
 
-.site-nav a {
+.site-nav .link {
     color: var(--primary-text);
 
     font-weight: 500;
@@ -60,8 +60,8 @@ body {
     letter-spacing: 0.02em;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
     color: var(--accent);
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 /* feedback-nav */
-.feedback-nav a {
+.feedback-nav .link{
     color: var(--secondary-text);
 
     font-weight: 500;
@@ -83,8 +83,8 @@ body {
     text-decoration: none;
 }
 
-.feedback-nav a:hover,
-.feedback-nav a:focus {
+.feedback-nav .link:hover,
+.feedback-nav .link:focus {
     color: var(--accent);
 }
 
@@ -109,6 +109,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    letter-spacing: 0.03em;
 }
 .secondary-button:hover, .secondary-button:focus, .activ{
     color: var(--white);
@@ -164,13 +165,13 @@ body {
 .teams{
     background-color: #F5F4FA;
 }
-.team h3{
+.team .name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
 }
-.team p{
+.team .job{
     color: var(--secondary-text);
 
     font-weight: 400;
@@ -178,7 +179,7 @@ body {
     line-height: 1.18;
     text-align: center;
 }
-.team li{
+.team .employee{
     background-color: var(--white);
 }
 
@@ -190,7 +191,7 @@ footer .logo{
     color: var(--white);
 }
 
-.footer-nav a{
+.footer-nav .link{
     color: rgba(255, 255, 255, 0.6);
 
     font-style: normal;
@@ -199,7 +200,10 @@ footer .logo{
     line-height: 2;
     text-decoration: none;
 }
-.footer-nav a:hover, .footer-nav a:focus{
+.footer-nav .link:hover, .footer-nav .link:focus{
+    color:var(--accent);
+}
+.footer-nav .adress{
     color: var(--white);
 }
 
@@ -207,21 +211,19 @@ footer .logo{
 
 /* page Portfolio */
 
-.portfolio a{
+.portfolio .link{
     text-decoration: none;
 }
-.portfolio h2{
+.portfolio .title{
     color: var(--primary-text);
 
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.portfolio p{
+.portfolio .description{
     color: var(--secondary-text);
     
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
 }
